@@ -16,7 +16,7 @@ export default function ChatPopup() {
   return (
     <motion.div layout>
       <AnimatePresence>
-        <motion.div
+        <motion.div layout
           variants={variants}
           className={cn(
             "fixed bottom-0 right-0 m-8 rounded-lg",
