@@ -1,12 +1,11 @@
 import Chat from "@/components/Chat";
-import ChatPopup from "@/components/ChatPopup";
 import Layout from "@/components/Layout";
 import { Metadata } from "next";
 
 export default function Home() {
   return (
     <Layout>
-      <ChatPopup />
+      <Chat className="bg-white h-full" />
     </Layout>
   );
 }

@@ -37,16 +37,10 @@ export default function ChatPopup() {
             }}
             className={cn(
               "fixed bottom-0 right-0 m-8 rounded-lg",
-              !isOpen ? "w-16 h-16 bg-blue-500" : "w-[20%] h-[80%] bg-gray-200",
+              !isOpen ? "w-16 h-16 bg-blue-500" : "w-[50%] h-[80%]",
             )}
           >
             <>
-              <p
-                onClick={() => setIsOpen(false)}
-                className="flex justify-end p-4 text-lg font-bold"
-              >
-                X
-              </p>
               <Chat className="w-full h-full" />
             </>
           </motion.div>
