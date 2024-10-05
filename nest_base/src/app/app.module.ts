@@ -6,13 +6,10 @@ import { AuthModule } from 'src/auth/auth.module';
 import { AppLoggerMiddleware } from 'src/utils/middlewares/logger';
 import { AuthMiddleware } from '../utils/middlewares/auth.middleware';
 import { AiModule } from '../ai/ai.module';
-import { RecipeModule } from '../recipe/recipe.module';
-import { ScheduleModule } from '@nestjs/schedule';
 
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true }),
-    // ScheduleModule.forRoot(),
-    AuthModule, AiModule, /* RecipeModule */ ],
+    AuthModule, AiModule],
   controllers: [AppController],
   providers: [AppService],
   exports: [],
